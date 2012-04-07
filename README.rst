@@ -9,6 +9,7 @@ http://www.postgresql.org/docs/8.4/interactive/sql-update.html
 You can use the values, values_list, only and defer methods ahead of the update_returning call to set the type of returned rows.
 
 Basic usage::
+
 	from udpate_returning import UpdateReturningManager
 
 	class AModel(models.Model):
