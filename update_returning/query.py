@@ -14,7 +14,7 @@ class SQLUpdateReturningCompiler(SQLUpdateCompiler):
         return sql, params
         
     def get_returning_columns(self):
-        return self.get_columns(False)
+        return self.get_columns(False)[0]
     
     def execute_sql(self, result_type):
         return super(SQLUpdateCompiler,self).execute_sql(result_type)
