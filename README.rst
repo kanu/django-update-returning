@@ -26,6 +26,7 @@ Basic usage::
 	updated = AModel.object.filter(flag__isnull=True).values_list('id',flat=True).update_returning(flag=False)
 
 
-
-
+Licence
+-------
+This is a free and unencumbered public domain software. For more information, see http://unlicense.org/.
 
